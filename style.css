@@ -1,0 +1,11 @@
+h1{
+    width: 530px;
+background-color:black ;
+color: aquamarine;
+font-family: Arial, 'Times New Roman', Times, serif;
+text-align: center;
+}
+div{
+    background-color:gray;
+    width: 400px;
+}

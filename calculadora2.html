@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Carlos</title>
+</head>
+<h1>APRESENTAÇÃO CALCULADORA</h1>
+
+<body>
+
+    <form name='calcularOperacao'   action="">
+    <label for = 'valor1'>Numero1</label>
+    <input type="int" id="numero1" />
+
+        <select name="opera" id="opera">
+            <option value="soma">Soma + </option>
+            <option value="sub">Subitração - </option>
+            <option value="div">Divisão / </option>
+            <option value="mult">Multiplicar * </option>
+        </select>
+
+        <label for = 'valor2'>Numero2</label>
+        <input type="int" id="numero2" />
+       
+        <input type="submit" onclick="calcular()" value="calcular" />
+    </form>
+    <h3> by: Lucas Morais P3 Sistemas para internet.<h3/>
+</body>
+<div id="fundo">
+<script>
+    function calcular(){
+    var valor1 = document.getElementById("numero1").value;
+    var valor2 = document.getElementById("numero2").value;
+    var opera = document.getElementById("opera").value;
+
+
+    if(opera == "soma"){
+   alert(parseInt(valor1) + parseInt(valor2));
+  }else
+  if(opera == "sub"){
+   alert(parseInt(valor1) - parseInt(valor2));
+  }else
+  if(opera == "mult"){
+   alert(parseInt(valor1) * parseInt(valor2));
+  }else
+  if (opera == "div"){
+   alert(parseInt(valor1) / parseInt(valor2));
+  }
+}
+
+</script>
+</html>
